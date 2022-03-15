@@ -1,0 +1,27 @@
+.admin-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-page-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 95vw;
+}
+
+.director-dashboard-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.top h1 > svg{
+    background-color: var(--main-color);
+    border-radius: 50%;
+    padding: 5px;
+}

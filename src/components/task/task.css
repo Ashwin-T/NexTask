@@ -1,0 +1,57 @@
+.task-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60rem;
+    height: 12vh;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.task-container h1{
+    padding: 15px;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: #e1ad01
+}
+
+.statusBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    border-radius: 0 15px 15px 0;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+
+.task-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.task-header > *{
+    font-size: 2rem;
+}
+
+
+.statusBar h3{
+    padding: 15px;
+    color: black
+}

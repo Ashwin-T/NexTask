@@ -1,0 +1,69 @@
+@import url("https://use.typekit.net/ipt2ztb.css");
+
+#root{
+  --main-color: crimson
+}
+body {
+  margin: 0;
+  font-family: sofia-pro-soft, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10 25px;
+  width: calc(100vw- 50px);
+}
+
+.title h1{
+  font-weight: bold;
+  font-size: 4.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.role{
+  font-weight: normal;
+  color: var(--main-color);
+  margin-top: 0;
+}

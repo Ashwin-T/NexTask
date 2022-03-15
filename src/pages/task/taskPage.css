@@ -1,0 +1,51 @@
+.task-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-page-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 95vw;
+}
+
+.task-page-container p{
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.task-page-container p:hover{
+    color: #00bcd4;
+}
+
+.task-page-container button{
+    width: 20rem;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--main-color);
+    color: white !important;
+    font-size: 16px;
+    cursor: pointer;    
+    transition: transform 0.15s;
+}
+
+.task-page-container button:hover{
+    transform: scale(1.1);
+}
+
+.task-page-container h1{
+    font-size: 5rem;
+}
+
+.vertical-button-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

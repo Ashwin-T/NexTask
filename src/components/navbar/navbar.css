@@ -1,0 +1,29 @@
+nav{
+    width: calc(100% - 2vw);
+    height: fit-content;
+    padding: 1vh 1vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+nav img{
+    width: 100px;
+}
+
+nav h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0.5rem auto;
+    cursor: pointer;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-content > *{
+    margin: auto 1.5rem;
+}
