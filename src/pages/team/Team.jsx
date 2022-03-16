@@ -41,7 +41,7 @@ const Team = () => {
             if(docSnap.exists()){
                 setData(docSnap.data());
 
-                if(docSnap.data().role === "Director" && docSnap.data().team !== "Lead"){
+                if(docSnap.data().team !== "Lead"){
                     const q = query(collection(db, docSnap.data().team + '/goals/goals'), where("status", "!=", "placeHolderLol"));
                     onSnapshot(q, (querySnapshot) => {
                         const tempArr = [];

@@ -201,7 +201,7 @@ const Dashboard = () => {
                                     <>
                                         <div className='apply-content'>
                                             <div className='title'>
-                                            <h1>You are in the system!!</h1>
+                                            <h1>Your request has been sent!</h1>
                                             </div>
                                             <h2>Now contact your director to approve your request!</h2>           
                                         </div>

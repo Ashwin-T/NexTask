@@ -1,5 +1,5 @@
 import './approval.css';
-import {doc, setDoc, getFirestore, deleteDoc } from 'firebase/firestore'
+import {doc, setDoc, getFirestore, deleteDoc, updateDoc, arrayUnion } from 'firebase/firestore'
 const Approval = ({request, team}) => {
 
     const db = getFirestore();
@@ -7,7 +7,6 @@ const Approval = ({request, team}) => {
     const handleDelete = async() => {
         const docRefDelete = doc(db, team + '/pending/pending', request.id);
         await deleteDoc(docRefDelete);
-        window.location.reload();
     }
 
     const handleAccept = async() => {
@@ -19,6 +18,10 @@ const Approval = ({request, team}) => {
             shortName: request.data().shortName,
             team: request.data().team,
         })
+        const updateDocRef = doc(db, request.data().team, 'members');
+        await updateDoc(updateDocRef, {
+            members: arrayUnion(request.data().uid)
+        }) 
 
         handleDelete();
     }

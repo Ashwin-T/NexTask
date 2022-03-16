@@ -252,9 +252,8 @@ const Admin = () => {
                                                         }   
                                                         {
                                                             requests.map((request, index) => {
-
                                                                 return(
-                                                                    <Approval key = {request.id} team = {data.team}request = {request}/>
+                                                                    <Approval key = {request.id} team = {data.team} request = {request}/>
                                                                 )
                                                             })
                                                         }
