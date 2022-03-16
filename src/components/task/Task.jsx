@@ -36,7 +36,7 @@ const Task = ({docz, editable,}) => {
     
             setStatusLocal(temp);
             if(docz.data().assignedTo === 'Director'){
-                const directorDocRef = doc(db, "Director", "goals", "goals", docz.id);
+                const directorDocRef = doc(db, "Director", "members", "tasks", docz.id);
                 await updateDoc(directorDocRef, {status: temp});
             }
             else if(docz.data().assignedTo === 'Event'){
