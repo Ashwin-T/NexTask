@@ -198,7 +198,7 @@ const Team = () => {
                             </div>
                         </div>
                     </div>
-                    <SpeedDial
+                    {data.role === "Director"&& <SpeedDial
                     ariaLabel="SpeedDial basic example"
                     sx={{ position: 'absolute', bottom: 25, right: 25}}
                     icon={<SpeedDialIcon />}
@@ -213,7 +213,7 @@ const Team = () => {
                         />
                     ))
                     }
-                    </SpeedDial>                    
+                    </SpeedDial>    }                
                 </>
             }
         </>

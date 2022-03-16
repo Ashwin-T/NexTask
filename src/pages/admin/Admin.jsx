@@ -85,6 +85,7 @@ const Admin = () => {
                     querySnapshot.forEach((doc) => {
                         tempArr.push(doc);
                     });
+
                     setRequests(tempArr);
                 }
                 else if(docSnap.data().role === "Director" && docSnap.data().team === "Lead"){
@@ -102,11 +103,7 @@ const Admin = () => {
                 });
                 setDirectorTasks(tempArr);
             })
-
-            
-
-           
-            
+               
             setLoading(false); 
 
         }
